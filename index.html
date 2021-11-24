@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue Practice</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="app">
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="">Home</a>
+                    </li>
+                    <li>
+                        <a href="">About</a>
+                    </li>
+                    <li>
+                        <a href="">Contact</a>
+                    </li>
+                    <li>
+                        <a href="">Help</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <form @submit.prevent="addition">
+                <input @input="clearResult" type="text" v-model="firstNumber" placeholder="Input number">
+               + <input @input="clearResult"  type="text" v-model="secondNumber" placeholder="Input number">
+                <button type="submit">Result</button>
+            </form>
+
+            <h3 v-if="result">Result: {{ result }}</h3>
+        </main>
+    </div>
+
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

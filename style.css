@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: azure;
+}
+
+
+header {
+    background-color: rgb(37, 37, 37);
+    padding: 30px;
+    text-align: center;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+}
+
+header ul li {
+    padding: 20px;
+    list-style: none;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: white;
+    background-color: rgba(84, 235, 15, 0.836);
+    padding: 30px;
+    transition: 300ms;
+}
+header ul li a:hover {
+    background-color: rgb(16, 126, 2);
+}
